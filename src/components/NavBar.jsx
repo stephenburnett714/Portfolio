@@ -4,11 +4,13 @@ import HamburgerData from './HamburgerData'
 
 
 export default function NavBar(props) {
+
+    handleMenuButtonClick
     return (
         <div className="nav-container">
             <div className="nav-text">Stephen Burnett</div>
             <div>
-                <img className="nav-bar" src={Bars} alt="" />
+                <img className="nav-bar" onClick{} src={Bars} alt="" />
             </div>
             { HamburgerData.length && (
                 <ul className="menu-items">

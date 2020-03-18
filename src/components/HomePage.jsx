@@ -29,11 +29,11 @@ export default function HomePage(props) {
         <h1>Skills and Tools</h1>
         <img className="image-sizing" src={react} alt="ReactImage"/>
         <img className="image-sizing" src={js} alt="ReactImage"/>
+        <img className="image-sizing" src={html} alt="ReactImage"/>
         <img className="image-sizing" src={css} alt="ReactImage"/>
+        <img className="image-sizing" src={github} alt="ReactImage"/>
         <img className="image-sizing" src={express} alt="ReactImage"/>
         <img className="image-sizing" src={sql} alt="ReactImage"/>
-        <img className="image-sizing" src={github} alt="ReactImage"/>
-        <img className="image-sizing" src={html} alt="ReactImage"/>
         <img className="image-sizing" src={rails} alt="ReactImage"/>
         <img className="image-sizing" src={ruby} alt="ReactImage"/>
         <div>Projects</div>

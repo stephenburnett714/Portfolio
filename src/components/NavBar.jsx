@@ -6,14 +6,18 @@ import HamburgerData from './HamburgerData'
 export default function NavBar(props) {
     return (
         <div className="nav-container">
-            <div className="nav-text">STEPHEN BURNETT</div>
+            <div className="nav-text">Stephen Burnett</div>
             <div>
                 <img className="nav-bar" src={Bars} alt="" />
             </div>
             { HamburgerData.length && (
-                <ul>
+                <ul className="menu-items">
                     { HamburgerData.map(data => (
-                        <li><a href={data.url }>{data.label}</a></li>
+                        <nav>
+                        <li className="menu-list" key={data.label}>
+                            <a className="menu-link" href={data.url }>{data.label}</a>
+                        </li>
+                        </nav>
                     ))}
                 </ul>
             )}

@@ -1,7 +1,7 @@
 import React from 'react';
 import Main from './components/Main'
 import NavBar from './components/NavBar'
-import Footer from './components/NavBar'
+import Footer from './components/Footer'
 import './App.css';
 
 export default function App() {
@@ -10,9 +10,6 @@ export default function App() {
       <NavBar />
       <Main />
       <Footer />
-
-
-
     </div>
   );
 }

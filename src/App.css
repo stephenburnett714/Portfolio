@@ -14,32 +14,15 @@
   z-index: 1;
 }
 
-
-/************ Home Page *************/
-
-.image-sizing {
-  width: 15vw;
-  height: auto;
-  margin: 20px
+.home-titles {
+  font-size: 6vw;
+  color: black;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  text-decoration: underline;
 }
 
-.image-sizing:hover {
-  animation: shake .5s infinate;
-}
-
-@keyframes shake {
-  0% {transform:translate(1px,1px) rotate(0deg)}
-  10% {transform:translate(0px,0px) rotate(-1deg)}
-  20% {transform:translate(-1px,-1px) rotate(0deg)}
-  30% {transform:translate(1px,1px) rotate(1deg)}
-  40% {transform:translate(1px,1px) rotate(0deg)}
-  50% {transform:translate(1px,1px) rotate(-1deg)}
-  60% {transform:translate(1px,1px) rotate(0deg)}
-  70% {transform:translate(1px,1px) rotate(1deg)}
-  80% {transform:translate(1px,1px) rotate(0deg)}
-  90% {transform:translate(1px,1px) rotate(-1deg)}
-}
-
+/************ Landing Picture *************/
 
 .home-page-title {
   position: absolute;
@@ -47,7 +30,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   color:white;
-  font-size:3.5rem;
+  font-size:3vw;
   background-color: rgb(0, 0, 0,.5);
   padding:1rem;
   border-radius: 50px;
@@ -59,6 +42,10 @@
   z-index: 0;
 }
 
+
+
+/************ About *************/
+
 .about-text {
   margin:2rem;
   font-size: 1.5rem;
@@ -67,7 +54,7 @@
 }
 
 .profile-picture {
-  height: 30rem;
+  height: 30vh;
   width: auto;
   border-radius: .5rem;
   margin: .5rem;
@@ -80,13 +67,18 @@
   margin-right: 10rem;
 }
 
-.home-titles {
-  font-size: 4rem;
-  color: black;
-  margin-top: 5rem;
-  margin-bottom: 5rem;
+/************ Skills and Tools *************/
+
+.image-sizing {
+  width: 15vw;
+  height: auto;
+  margin: 20px
 }
 
+.image-sizing:hover {
+  transform: scale(1.1);
+  transition: ease-in .5s
+}
 
 /************ Nav Bar *************/
 
@@ -158,6 +150,26 @@ transition:left ease-in .3s;
 
 .container {
   position: 'absolute'
+}
+
+
+/************ Projects *************/
+
+.project-image {
+  width: 30vw;
+  height:auto;
+}
+
+.all-projects-container {
+  display:flex;
+  flex-direction: column;
+  margin: 5rem;
+}
+
+.single-project-container {
+  display: flex;
+  flex-direction: row;
+  margin: 2rem;
 }
 
 

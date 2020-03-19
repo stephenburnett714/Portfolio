@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 import react from '../images/React.png'
 import js from '../images/Javascript.png'
 import css from '../images/CSS.png'
@@ -39,7 +39,7 @@ export default function HomePage(props) {
 
     function handleSubmit(event) {
     }
-    
+
     return (
         <div>
 
@@ -118,6 +118,29 @@ export default function HomePage(props) {
                     </div>
                 </div>
 
+                {/********  Resume ********/}
+                <div>Resume</div>
+                <div>Work Experience</div>
+                <div>SOFTWARE ENGINEERING IMMERSIVE</div>
+                <div>GENERAL ASSEMBLY | DEC 2019 - MAR 2020</div>
+                <div>Full time fellow in the Software Engineering Immerse program that includes over 400 hours of professional training over 12 weeks.
+Education: Git, GitHub, Command Line, JavaScript, CSS,HTM, Ruby, Rails, SQL, Express, and React.</div>
+                <div>BUSINESS CONSULTANT</div>
+                <div>THE ACCELA GROUP | JAN 2013 - JUL 2019</div>
+                <div>Responsible for developing business plans and excel based financial models for company start-ups, acquisitions, and mergers.
+Conducted monthly meetings with clients to review financial statements and strategic growth tactics i.e.,pipeline development and marketing strategies.</div>
+                <div>BUSINESS ANALYSTS</div>
+                <div>NAVITAS BILLING | DEC 2015 - OCT 2016</div>
+                <div>Creator of investment grade financial model used for initial seed funding . Conducted product demos to perspective clients for the company's custom billing platform.
+Assisted in the development of the custom billing system utilizing database software Jaspersoft.</div>
+
+
+                <div>EDUCATION</div>
+                <div>GENERAL ASSEMBALY</div>
+                <div>SOFTWARE ENGINEERING IMMERSIVE</div>
+                <a href="/images/myw3schoolsimage.jpg" download>
+                <button type="submit" className="btn btn-primary">Download Resume</button>
+                </a>
 
                 {/********  Contact Form ********/}
                 <h1 className="home-titles" >Contact Me</h1>
@@ -138,8 +161,8 @@ export default function HomePage(props) {
                         <button type="submit" className="btn btn-primary">Submit</button>
                     </form>
                 </div>
-              
-                
+
+
             </div>
         </div>
     )

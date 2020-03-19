@@ -42,6 +42,26 @@
   z-index: 0;
 }
 
+@media only screen and (max-width: 950px) {
+  .home-page-picture {
+    height:50vh;
+    width: 100vw;
+    z-index: 0;
+  }
+
+  .home-page-title {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:white;
+    font-size:3.5vw;
+    background-color: rgb(0, 0, 0,.5);
+    padding:1rem;
+    border-radius: 50px;
+  }
+
+}
 
 
 /************ About *************/
@@ -50,21 +70,37 @@
   margin:2rem;
   font-size: 1.8vw;
   vertical-align: middle;
-  margin: 5vw;
+  margin: 3vw;
+  margin-left: 10vw;
+  margin-right: 10vw;
 }
 
 .profile-picture {
-  height: 30vh;
+  height: 40vh;
   width: auto;
   border-radius: .5rem;
-  margin: 5vw;
+  margin: 0;
 }
 
 .about-container {
   display: flex;
-  flex-direction: row;
-  margin-left: 10rem;
-  margin-right: 10rem;
+  flex-direction: column;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+@media only screen and (max-width: 950px) {
+  .about-text {
+    margin:2rem;
+    font-size: 2.5vw;
+    vertical-align: middle;
+    margin: 3vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-top: 5vw;
+  }
 }
 
 /************ Skills and Tools *************/
@@ -171,6 +207,7 @@ flex-direction: column;
   display:flex;
   flex-direction: column;
   margin: 5rem;
+  justify-content: center;
 }
 
 .single-project-container {
@@ -189,3 +226,18 @@ font-size: xx-large;
   font-size: large;
 }
 
+@media only screen and (max-width: 950px) {
+  .single-project-container {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+    justify-content: center;
+  }
+
+  .project-image {
+    width: 40vw;
+    height:auto;
+    border-radius: 10px;
+    box-shadow: 5px 10px 8px #888888;
+  }
+}

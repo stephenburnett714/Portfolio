@@ -13,7 +13,7 @@ export const HamburgerData = [
     },
     {
         label: "Resume",
-        url:"http://localhost:3000/resume"
+        url:"http://localhost:3000/"
     }
 ]
 

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import react from '../images/React.png'
 import js from '../images/Javascript.png'
 import css from '../images/CSS.png'
@@ -19,6 +19,27 @@ import restaurant from '../images/Restaurant.jpg'
 
 export default function HomePage(props) {
 
+    /////// Email Form ////////
+
+    const [name, setName] = useState('')
+    const [email, setEmail] = useState('')
+    const [message, setMessage] = useState('')
+
+    function onNameChange(event) {
+        setName(event.target.value)
+    }
+
+    function onEmailChange(event) {
+        setEmail(event.target.value)
+    }
+
+    function onMessageChange(event) {
+        setMessage(event.target.value)
+    }
+
+    function handleSubmit(event) {
+    }
+    
     return (
         <div>
 
@@ -60,34 +81,65 @@ export default function HomePage(props) {
                 <div className="single-project-container">
                     <img className="project-image" src={restaurant} alt="" />
                     <div>
-                        <div>Joyce's Carribian Restaurant</div>
-                        <div>Created a restaurant application usung </div>
+                        <div className="project-titles">Joyce's Carribian Restaurant</div>
+                        <div className="project-text">Created a restaurant application using React(Front-End), Ruby on Rails(Back-End). The applicaiton is comprised of a home, event, delivery, menu and profile screens. The user has the ablity to make order which is put into the backend. was cThe application allowed the user to order food and each of the orders were put to the back</div>
+                        <div><a href="">View Code on Github</a></div>
+                        <div><a href="https://joyce-app.herokuapp.com/">View Live Site</a></div>
                     </div>
                 </div>
 
                 <div className="single-project-container">
                     <img className="project-image" src={car} alt="" />
                     <div>
-                        <div>Budget Website Redesign</div>
-                        <div>Worked in a team of three Software-Engineers and three UX/UI designers to redesign the budget rent-a-car website. The application uses React for front end and Express for the back-end. I was tasked to manage the Github merges in this process. Out team created a back end to hold the specifics for the rentable cars. The front end was created based on on the wireframe and work-flow that was givin to us by the UX/UI designers. </div>
+                        <div className="project-titles">Budget Website Redesign</div>
+                        <div className="project-text">Worked in a team of three Software-Engineers and three UX/UI designers to redesign the budget rent-a-car website. The application uses React for front end and Express for the back-end. I was tasked to manage the Github merges in this process. Out team created a back end to hold the specifics for the rentable cars. The front end was created based on on the wireframe and work-flow that was givin to us by the UX/UI designers. </div>
+                        <div><a href="">View Code on Github</a></div>
+                        <div><a href="http://budget-boyz.herokuapp.com/">View Live Site</a></div>
                     </div>
                 </div>
 
                 <div className="single-project-container">
                     <img className="project-image" src={movie} alt="" />
                     <div>
-                        <div>Movie Database</div>
-                        <div>Created an applicaiton using React that gives the user the ability to search through movies, tv-shows and actors/actresses using themoviedb API. while searching a movie or tv-show a description is given along with information about the cast. While serching a actor/actress a description is given along with the movies and tv-shows in which they appeared.</div>
+                        <div className="project-titles">Movie Database</div>
+                        <div className="project-text">Created an applicaiton using React that gives the user the ability to search through movies, tv-shows and actors/actresses using themoviedb API. while searching a movie or tv-show a description is given along with information about the cast. While serching a actor/actress a description is given along with the movies and tv-shows in which they appeared.</div>
+                        <div><a href="">View Code on Github</a></div>
+                        <div><a href="http://stephen-moviedatabase.surge.sh/">View Live Site</a></div>
                     </div>
                 </div>
 
                 <div className="single-project-container">
                     <img className="project-image" src={jeopardy} alt="" />
                     <div>
-                        <div>Random Jeopardy</div>
-                        <div>Created a game in Vanilla Javascript that gives you 10 random Jeopardy questions from the JService API. The user gets points depending on the difficulty of the question. The user has the ability to restart the game or skip questions at any time. One of the 10 quesitons ias a daily-double and is worth double the points.</div>
+                        <div className="project-titles">Random Jeopardy</div>
+                        <div className="project-text">Created a game in Vanilla Javascript that gives you 10 random Jeopardy questions from the JService API. The user gets points depending on the difficulty of the question. The user has the ability to restart the game or skip questions at any time. One of the 10 quesitons ias a daily-double and is worth double the points.</div>
+                        <div><a href="">View Code on Github</a></div>
+                        <div><a href="">View Live Site</a></div>
                     </div>
                 </div>
+
+
+                {/********  Contact Form ********/}
+                <h1 className="home-titles" >Contact Me</h1>
+                <div>
+                    <form id="contact-form" onSubmit={handleSubmit} method="POST">
+                        <div className="form-group">
+                            <label htmlFor="name">Name</label>
+                            <input type="text" className="form-control" value={name} onChange={onNameChange} />
+                        </div>
+                        <div className="form-group">
+                            <label htmlFor="exampleInputEmail1">Email</label>
+                            <input type="email" className="form-control" aria-describedby="emailHelp" value={email} onChange={onEmailChange} />
+                        </div>
+                        <div className="form-group">
+                            <label htmlFor="message">Message</label>
+                            <textarea className="form-control" rows="5" value={message} onChange={onMessageChange} />
+                        </div>
+                        <button type="submit" className="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+              
+                
             </div>
         </div>
     )

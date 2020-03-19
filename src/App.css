@@ -48,16 +48,16 @@
 
 .about-text {
   margin:2rem;
-  font-size: 1.5rem;
-  margin-left: 3rem;
-  margin-right: 3rem;
+  font-size: 1.8vw;
+  vertical-align: middle;
+  margin: 5vw;
 }
 
 .profile-picture {
   height: 30vh;
   width: auto;
   border-radius: .5rem;
-  margin: .5rem;
+  margin: 5vw;
 }
 
 .about-container {
@@ -114,10 +114,14 @@
 .menu-items {
 padding:0;
 margin:0;
+display : flex;
+flex-direction: column;
 }
 
 .menu-list {
   list-style: none;
+  display : flex;
+  flex-direction: column;
 }
 
 .menu-link {
@@ -139,9 +143,10 @@ box-shadow:1px 1px #888;
 position: fixed;
 top: 0;
 z-index: 999;
-left: -102vw;
+left: -150vw;
 transition:left ease-in .3s;
-
+display : flex;
+flex-direction: column;
 }
 
 .nav.show {
@@ -158,6 +163,8 @@ transition:left ease-in .3s;
 .project-image {
   width: 30vw;
   height:auto;
+  border-radius: 10px;
+  box-shadow: 5px 10px 8px #888888;
 }
 
 .all-projects-container {
@@ -172,4 +179,13 @@ transition:left ease-in .3s;
   margin: 2rem;
 }
 
+
+.project-titles {
+font-size: xx-large;
+}
+
+.project-text {
+  margin:2vw;
+  font-size: large;
+}
 

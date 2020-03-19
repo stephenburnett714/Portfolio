@@ -17,11 +17,34 @@
 .home-titles {
   font-size: 6vw;
   color: black;
-  margin-top: 5rem;
-  margin-bottom: 5rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
   text-decoration: underline;
 }
 
+.hr {
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 2px;
+  width: 96%;
+  height: 1px;
+}
+
+
+
+@media only screen and (max-width: 950px) {
+  .home-titles {
+    font-size: 4vw;
+    color: black;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-decoration: underline;
+  }
+}
 /************ Landing Picture *************/
 
 .home-page-title {
@@ -44,18 +67,18 @@
 
 @media only screen and (max-width: 950px) {
   .home-page-picture {
-    height:50vh;
+    height:100vh;
     width: 100vw;
     z-index: 0;
   }
 
   .home-page-title {
     position: absolute;
-    top: 25%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     color:white;
-    font-size:3.5vw;
+    font-size:3.7vw;
     background-color: rgb(0, 0, 0,.5);
     padding:1rem;
     border-radius: 50px;
@@ -226,6 +249,12 @@ font-size: xx-large;
   font-size: large;
 }
 
+.links-container {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
 @media only screen and (max-width: 950px) {
   .single-project-container {
     display: flex;
@@ -235,9 +264,40 @@ font-size: xx-large;
   }
 
   .project-image {
-    width: 40vw;
+    width: 90vw;
+    margin-left: 2vw;
+    margin-right:2vw;
     height:auto;
     border-radius: 10px;
     box-shadow: 5px 10px 8px #888888;
   }
+
+  .project-text {
+    margin:0;
+    font-size: large;
+  }
+
+  .all-projects-container {
+    display:flex;
+    flex-direction: column;
+    margin: 1rem;
+    /* justify-content: center; */
+    align-items: center;
+  }
 }
+
+/************ Resume *************/
+
+.resume {
+  width: 80vw;
+  height: auto;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  box-shadow: 5px 10px 8px #888888;
+}
+
+.resume-container {
+  display:flex;
+  justify-content: center;
+}
+

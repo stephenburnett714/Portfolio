@@ -9,6 +9,7 @@ import rails from '../images/Rails.png'
 import ruby from '../images/Ruby.png'
 import sql from '../images/SQL.png'
 import homepicture from '../images/HomePicture.jpg'
+import profile from '../images/Profile.JPG'
 
 
 
@@ -23,10 +24,12 @@ export default function HomePage(props) {
                 <div>A Software Engineer</div>
             </div>
         
-        <div>About</div>
-        <p>I am an inquisitive and diligent software engineer who has over six years of consulting experience. I have a passion for problem solving and learning. Consulting has taught me to live in a growth mindset where I strive to be better everyday. Working as a business analyst at Navitas Billing ignited my enthusiasm for coding and ultimately led me to pursue a career change.</p>
-
-        <h1>Skills and Tools</h1>
+        <h1 className="home-titles">About</h1>
+        <div className="about-container">
+            <div><img className="profile-picture " src={profile} /></div>
+        <div><p className="about-text" >I am an inquisitive and diligent software engineer who has over six years of consulting experience. I have a passion for problem solving and learning. Consulting has taught me to live in a growth mindset where I strive to be better everyday. Working as a business analyst at Navitas Billing ignited my enthusiasm for coding and ultimately led me to pursue a career change.</p></div>
+        </div>
+        <h1 className="home-titles" >Skills and Tools</h1>
         <img className="image-sizing" src={react} alt="ReactImage"/>
         <img className="image-sizing" src={js} alt="ReactImage"/>
         <img className="image-sizing" src={html} alt="ReactImage"/>
@@ -36,7 +39,7 @@ export default function HomePage(props) {
         <img className="image-sizing" src={sql} alt="ReactImage"/>
         <img className="image-sizing" src={rails} alt="ReactImage"/>
         <img className="image-sizing" src={ruby} alt="ReactImage"/>
-        <div>Projects</div>
+        <h1 className="home-titles" >Projects</h1>
         
         </div>
     )

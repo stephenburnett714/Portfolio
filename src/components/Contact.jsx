@@ -44,21 +44,21 @@ class Contact extends Component {
 
     render() {
         return (
-            <form id="contact-form" onSubmit={(e) => this.formSubmit(e)}>
+            <form id="contact-form" className="form-container" onSubmit={(e) => this.formSubmit(e)}>
 
                 <div className="form-group">
-                    <label class="message" htmlFor="message-input">Your Message</label>
-                    <textarea className="form-control" onChange={e => this.setState({ message: e.target.value })} name="message" class="message-input" type="text" placeholder="Please write your message here" value={this.state.message} required />
+                    <label htmlFor="message">Your Message</label>
+                    <textarea className="form-control" onChange={e => this.setState({ message: e.target.value })} name="message" type="text" placeholder="Please write your message here" value={this.state.message} required />
                 </div>
 
                 <div className="form-group">
-                    <label class="message-name" htmlFor="message-name">Your Name</label>
-                    <input className="form-control" onChange={e => this.setState({ name: e.target.value })} name="name" class="message-name" type="text" placeholder="Your Name" value={this.state.name} />
+                    <label  htmlFor="name">Your Name</label>
+                    <input className="form-control" onChange={e => this.setState({ name: e.target.value })} name="name" type="text" placeholder="Your Name" value={this.state.name} />
                 </div>
 
                 <div className="form-group">
-                    <label class="message-email" htmlFor="message-email">Your Email</label>
-                    <input className="form-control" rows="5" onChange={(e) => this.setState({ email: e.target.value })} name="email" class="message-email" type="email" placeholder="your@email.com" required value={this.state.email} />
+                    <label htmlFor="exampleInputEmail1">Your Email</label>
+                    <input className="form-control" rows="5" onChange={(e) => this.setState({ email: e.target.value })} name="email" type="email" placeholder="your@email.com" required value={this.state.email} />
                 </div>
 
                 <div className="button--container">

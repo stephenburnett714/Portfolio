@@ -1,3 +1,7 @@
+* {
+  font-family: 'Sen', sans-serif;
+}
+
 .App {
   text-align: center;
 }
@@ -32,6 +36,9 @@
   border-width: 2px;
   width: 96%;
   height: 1px;
+}
+.my-name {
+  color: rgb(115, 173, 187);
 }
 
 
@@ -134,11 +141,10 @@
   margin: 20px
 }
 
-.image-sizing:hover {
-  transform: scale(1.1);
-  transition: ease-in .5s
-}
 
+#skills-and-tools {
+  margin-bottom: 10vh;
+}
 /************ Nav Bar *************/
 .nav-container {
   height: 7vh;
@@ -184,7 +190,7 @@ text-decoration: none;
 color: white;
 display:flex;
 padding: 10px 16px;
-border-bottom: 1px solid white;
+/* border-bottom: 1px solid white; */
 }
 
 .nav{
@@ -197,15 +203,16 @@ border-bottom: 1px solid white;
   left: -170vw;
   font-size: 5vw;
   margin: auto;
+  transition:left ease-out 0.3s;
 }
 
 .nav.show {
 left:0;
+transition: left ease-in 0.3s;
 }
 
 .container {
  position: relative;
-
 }
 
 
@@ -293,6 +300,44 @@ font-size: xx-large;
 .resume-container {
   display:flex;
   justify-content: center;
+  flex-direction: column;
+  margin: 5vh 15vh 5vh 15vh;
 }
+
+#resume {
+  margin-bottom: 10vh;
+}
+
+.resume-main-title {
+font-size: 3vw;
+margin-bottom: 1vh;
+}
+
+.job-title {
+  font-size: 2.2vw;
+  text-decoration: underline;
+}
+
+.employeer-time {
+  font-size: 1.9vw;
+}
+
+.job-description {
+
+}
+
+.job-spacing {
+margin:3vh
+}
+
+
+/************ Contact *************/
+.form-container {
+margin-bottom: 10vh;
+  margin-left: 20vw;
+  margin-right: 20vw
+
+}
+
 
 

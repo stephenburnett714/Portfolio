@@ -35,15 +35,18 @@ export default function HomePage(props) {
 
 
             {/********  About Section ********/}
+            <div id="about">
             <h1 className="home-titles">About</h1>
             <div className="about-container">
                 <div><img className="profile-picture " src={profile} /></div>
                 <div><p className="about-text" >I am an inquisitive and diligent software engineer who has over six years of consulting experience. I have a passion for problem solving and learning. Consulting has taught me to live in a growth mindset where I strive to be better everyday. Working as a business analyst at Navitas Billing ignited my enthusiasm for coding and ultimately led me to pursue a career change.</p></div>
             </div>
+            </div>
 
             <div className="hr"></div>
 
             {/********  Skills and Tools Section ********/}
+            <div id="skills-and-tools">
             <h1 className="home-titles" >Skills and Tools</h1>
             <img className="image-sizing" src={react} alt="ReactImage" />
             <img className="image-sizing" src={js} alt="ReactImage" />
@@ -54,10 +57,11 @@ export default function HomePage(props) {
             <img className="image-sizing" src={sql} alt="ReactImage" />
             <img className="image-sizing" src={rails} alt="ReactImage" />
             <img className="image-sizing" src={ruby} alt="ReactImage" />
-
+            </div>
             <div className="hr"></div>
 
             {/********  Projects Section ********/}
+            <div id="projects">
             <h1 className="home-titles" >Projects</h1>
 
 
@@ -65,7 +69,7 @@ export default function HomePage(props) {
                 <div className="single-project-container">
                     <img className="project-image" src={restaurant} alt="" />
                     <div>
-                        <div className="project-titles">Joyce's Carribian Restaurant</div>
+                        <div className="project-titles">Joyce's Caribbean Restaurant</div>
                         <div className="project-text">Created a restaurant application using React(Front-End), Ruby on Rails(Back-End). The applicaiton is comprised of a home, event, delivery, menu and profile screens. The user has the ablity to make order which is put into the backend. was cThe application allowed the user to order food and each of the orders were put to the back</div>
                         <div className="links-container">
                             <div><a href="">View Code on Github</a></div>
@@ -109,10 +113,11 @@ export default function HomePage(props) {
                         </div>
                     </div>
                 </div>
-
+                </div>
                 <div className="hr"></div>
 
                 {/********  Resume ********/}
+                <div id="resume">
                 <h1 className="home-titles">Resume</h1>
                 <div className="resume-container">
                 <img className="resume" src={resume} alt="" />
@@ -120,14 +125,15 @@ export default function HomePage(props) {
                 <a href={resume} download>
                     <button className="btn btn-primary">Download Resume</button>
                 </a>
-
+                </div>
                 <div className="hr"></div>
 
                 {/********  Contact Form ********/}
+                <div id="contact">
                 <h1 className="home-titles" >Contact Me</h1>
 
                 <Contact />
-
+                </div>
 
             </div>
         </div>

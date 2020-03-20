@@ -141,13 +141,14 @@
 
 /************ Nav Bar *************/
 .nav-container {
-  height: auto;
+  height: 7vh;
   display: flex;
-  /* justify-content: space-between; */
+  justify-content: space-between;
   z-index: 3;
-  background-color: rgb(0, 0, 0,.5);
+  background-color: rgb(0, 0, 0,.7);
   position: fixed;
   width: 100vw;
+  align-items:center;
 }
 
 .nav-text {
@@ -180,20 +181,22 @@ list-style:none;
 
 .menu-link {
 text-decoration: none;
-color: #555;
+color: white;
 display:flex;
 padding: 10px 16px;
 border-bottom: 1px solid white;
 }
 
 .nav{
-  width: 20vw;
+  width: 36.5vw;
   box-shadow: 1px 1px #888;
   position: absolute;
-  top:0;
+  margin-top:7vh;
   z-index: 999;
-  background-color:#fff;
+  background-color:rgb(0, 0, 0,.7);
   left: -170vw;
+  font-size: 5vw;
+  margin: auto;
 }
 
 .nav.show {
@@ -292,7 +295,4 @@ font-size: xx-large;
   justify-content: center;
 }
 
-@media only screen and (max-width: 950px) {
-  
-}
 

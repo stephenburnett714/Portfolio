@@ -113,7 +113,7 @@ export default function HomePage(props) {
                 <div className="hr"></div>
 
                 {/********  Resume ********/}
-                <div className="home-titles">Resume</div>
+                <h1 className="home-titles">Resume</h1>
                 <div className="resume-container">
                 <img className="resume" src={resume} alt="" />
                 </div>
@@ -125,6 +125,7 @@ export default function HomePage(props) {
 
                 {/********  Contact Form ********/}
                 <h1 className="home-titles" >Contact Me</h1>
+
                 <Contact />
 
 

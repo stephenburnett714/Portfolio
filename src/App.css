@@ -38,7 +38,8 @@
   height: 1px;
 }
 .my-name {
-  color: rgb(115, 173, 187);
+  font-size: 3.2vw;
+  font-style: italic;
 }
 
 
@@ -110,6 +111,7 @@
   width: auto;
   border-radius: .5rem;
   margin: 0;
+  box-shadow: 5px 10px 8px #888888;
 }
 
 .about-container {
@@ -163,6 +165,14 @@
   margin:10px;
 }
 
+@media only screen and (max-width: 950px) {
+  .nav-text {
+    color:white;
+    font-size: 25px;
+    margin:10px;
+  }
+}
+
 /************ Drop Down *************/
 
 
@@ -194,14 +204,14 @@ padding: 10px 16px;
 }
 
 .nav{
-  width: 36.5vw;
+  width: 25vw;
   box-shadow: 1px 1px #888;
   position: absolute;
   margin-top:7vh;
   z-index: 999;
   background-color:rgb(0, 0, 0,.7);
   left: -170vw;
-  font-size: 5vw;
+  font-size: 3.5vw;
   margin: auto;
   transition:left ease-out 0.3s;
 }
@@ -215,6 +225,20 @@ transition: left ease-in 0.3s;
  position: relative;
 }
 
+@media only screen and (max-width: 950px) {
+  .nav{
+    width: 45vw;
+    box-shadow: 1px 1px #888;
+    position: absolute;
+    margin-top:7vh;
+    z-index: 999;
+    background-color:rgb(0, 0, 0,.7);
+    left: -170vw;
+    font-size: 5vw;
+    margin: auto;
+    transition:left ease-out 0.3s;
+  }
+}
 
 
 /************ Projects *************/
@@ -275,7 +299,7 @@ font-size: xx-large;
 
   .project-text {
     margin:0;
-    font-size: large;
+    font-size: 3vw;
   }
 
   .all-projects-container {
@@ -323,11 +347,43 @@ margin-bottom: 1vh;
 }
 
 .job-description {
-
+  font-size: 1.7vw;
 }
 
 .job-spacing {
 margin:3vh
+}
+
+@media only screen and (max-width: 950px) {
+  .resume-container {
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 5vh 0vh 5vh 0vh;
+  }
+  .resume-main-title {
+    font-size: 5.2vw;
+    margin-bottom: 1vh;
+    }
+    
+    .job-title {
+      font-size: 3.5vw;
+      text-decoration: underline;
+    }
+    
+    .employeer-time {
+      font-size: 3.3vw;
+    }
+    
+    .job-description {
+      font-size: 3vw;
+    }
+    
+    .job-spacing {
+    margin:2vh
+    }
+
+
 }
 
 

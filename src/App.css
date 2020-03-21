@@ -38,7 +38,7 @@
   height: 1px;
 }
 .my-name {
-  font-size: 3.2vw;
+  font-size: 3.5vw;
   font-style: italic;
 }
 
@@ -51,6 +51,11 @@
     margin-top: 2rem;
     margin-bottom: 2rem;
     text-decoration: underline;
+  }
+
+  .my-name {
+    font-size: 4vw;
+    font-style: italic;
   }
 }
 /************ Landing Picture *************/

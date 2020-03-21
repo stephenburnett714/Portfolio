@@ -28,8 +28,8 @@ export default function HomePage(props) {
             {/********  Title Section ********/}
             <img className="home-page-picture" alt="background" src={homepicture} />
             <div className="home-page-title">
-                <span>Hello I'm </span>
-                <span className="my-name">Stephen Burnett</span>
+                <div>Hello</div>
+                <div className="my-name">I'm Stephen Burnett</div>
                 <div>A Software Engineer</div>
             </div>
 
@@ -116,7 +116,7 @@ export default function HomePage(props) {
                 </div>
                 <div className="hr"></div>
 
-                {/********  Resume ********/}
+                {/********  Resume Section ********/}
                 <div id="resume">
                     <h1 className="home-titles">Resume</h1>
                     <div className="resume-container">

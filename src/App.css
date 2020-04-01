@@ -19,7 +19,7 @@
 }
 
 .home-titles {
-  font-size: 6vw;
+  font-size: 4.5vw;
   color: black;
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -104,7 +104,7 @@
 
 .about-text {
   margin:2rem;
-  font-size: 1.8vw;
+  font-size: large;
   vertical-align: middle;
   margin: 3vw;
   margin-left: 10vw;
@@ -143,14 +143,23 @@
 /************ Skills and Tools *************/
 
 .image-sizing {
-  width: 15vw;
+  width: 10vw;
   height: auto;
   margin: 20px
 }
 
 
+
 #skills-and-tools {
   margin-bottom: 10vh;
+}
+
+@media only screen and (max-width: 950px) {
+  .image-sizing {
+    width: 15vw;
+    height: auto;
+    margin: 20px
+  }
 }
 /************ Nav Bar *************/
 .nav-container {
@@ -167,8 +176,24 @@
 .nav-text {
   color:white;
   font-size: 35px;
-  margin:10px;
 }
+
+.footer-logo {
+  margin:10px;
+  color: rgb(48,124,247);
+  
+  }
+
+  .nav-span {
+    align-items: center;
+  }
+
+.nav-inner-container {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
 
 @media only screen and (max-width: 950px) {
   .nav-text {
@@ -205,18 +230,17 @@ text-decoration: none;
 color: white;
 display:flex;
 padding: 10px 16px;
-/* border-bottom: 1px solid white; */
 }
 
 .nav{
-  width: 25vw;
+  width: 15vw;
   box-shadow: 1px 1px #888;
   position: absolute;
   margin-top:7vh;
   z-index: 999;
   background-color:rgb(0, 0, 0,.7);
   left: -170vw;
-  font-size: 3.5vw;
+  font-size: 1.5vw;
   margin: auto;
   transition:left ease-out 0.3s;
 }
@@ -352,7 +376,7 @@ margin-bottom: 1vh;
 }
 
 .job-description {
-  font-size: 1.7vw;
+  font-size: large;
 }
 
 .job-spacing {
@@ -394,10 +418,28 @@ margin:3vh
 
 /************ Contact *************/
 .form-container {
-margin-bottom: 10vh;
+  margin-bottom: 10vh;
   margin-left: 20vw;
   margin-right: 20vw
+}
 
+/************ Footer *************/
+.footer-container {
+  display: flex;
+  justify-content: space-evenly;
+  height: 5vw
+}
+
+.footer-text {
+  font-size: xx-large;
+  margin: 1vw;
+}
+
+@media only screen and (max-width: 950px) {
+  .footer-text {
+    font-size: 5vw;
+    margin: 1vw;
+  }
 }
 
 

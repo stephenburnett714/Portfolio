@@ -1,19 +1,23 @@
 export const HamburgerData = [
     {
-        label: "Home",
-        url:"http://localhost:3000/"
+        label: "About",
+        url:"#about"
     },
     {
-        label: "About",
-        url:"http://localhost:3000/"
+        label: "Skills & Tools",
+        url:"#skills-and-tools"
     },
     {
         label: "Projects",
-        url:"http://localhost:3000/"
+        url:"#projects"
     },
     {
         label: "Resume",
-        url:"http://localhost:3000/"
+        url:"#resume"
+    },
+    {
+        label: "Contact",
+        url:"#contact"
     }
 ]
 

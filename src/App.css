@@ -78,6 +78,7 @@
   z-index: 0;
 }
 
+
 @media only screen and (max-width: 950px) {
   .home-page-picture {
     height:100vh;
@@ -96,7 +97,6 @@
     padding:1rem;
     border-radius: 50px;
   }
-
 }
 
 
@@ -178,11 +178,15 @@
   font-size: 35px;
 }
 
-.footer-logo {
+.footer-logo :hover {
   margin:10px;
   color: rgb(48,124,247);
-  
   }
+
+  .footer-logo {
+    margin:10px;
+    color: white;
+    }
 
   .nav-span {
     align-items: center;
@@ -198,7 +202,7 @@
 @media only screen and (max-width: 950px) {
   .nav-text {
     color:white;
-    font-size: 25px;
+    font-size: 16px;
     margin:10px;
   }
 }
@@ -237,7 +241,7 @@ padding: 10px 16px;
   box-shadow: 1px 1px #888;
   position: absolute;
   margin-top:7vh;
-  z-index: 999;
+  z-index: 3;
   background-color:rgb(0, 0, 0,.7);
   left: -170vw;
   font-size: 1.5vw;

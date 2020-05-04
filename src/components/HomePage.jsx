@@ -109,7 +109,7 @@ export default function HomePage(props) {
                             <div className="project-text">Created a game in Vanilla Javascript that gives you 10 random Jeopardy questions from the JService API. The user gets points depending on the difficulty of the question. The user has the ability to restart the game or skip questions at any time. One of the 10 questions is a daily-double and is worth double the points.</div>
                             <div className="links-container">
                                 <div><a className="site-link" href="https://github.com/stephenburnett714/Random-Jeopardy" rel="noopener noreferrer" target="_blank">View Code on Github</a></div>
-                                <div><a className="site-link" href="" rel="noopener noreferrer" target="_blank">View Live Site</a></div>
+                                <div><a className="site-link" href="http://random-jeopardy.surge.sh" rel="noopener noreferrer" target="_blank">View Live Site</a></div>
                             </div>
                         </div>
                     </div>
